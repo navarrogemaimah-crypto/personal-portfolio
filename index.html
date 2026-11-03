@@ -4,337 +4,439 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Personal portfolio of Gemaimah T. Navarro, a BSIT student and aspiring web developer.">
+    <meta name="theme-color" content="#050b18">
 
+    <title>Gemaimah T. Navarro | Digital Portfolio</title>
 
-    <title>Gemaimah T. Navarro | Portfolio</title>
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- LOADING SCREEN -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <h2>INITIALIZING SYSTEM</h2>
+            <p>WELCOME TO MY DIGITAL WORLD</p>
+        </div>
+    </div>
 
+    <!-- DIGITAL BACKGROUND -->
+    <div class="background-effects" aria-hidden="true">
+        <canvas id="particles"></canvas>
+        <div class="grid-overlay"></div>
+        <div class="scan-line"></div>
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="glow glow-three"></div>
+    </div>
 
-    <!-- HEADER AND NAVIGATION -->
+    <!-- HEADER -->
     <header>
         <nav class="navbar">
-            <div class="logo">Gemaimah T. Navarro</div>
 
+            <a href="#home" class="logo" data-page="home">
+                G<span>.</span> NAVARRO
+            </a>
 
+            <div class="nav-links">
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+                <button class="nav-link active" data-page="home">HOME</button>
+                <button class="nav-link" data-page="about">ABOUT</button>
+                <button class="nav-link" data-page="skills">SKILLS</button>
+                <button class="nav-link" data-page="projects">PROJECTS</button>
+                <button class="nav-link" data-page="education">EDUCATION</button>
+                <button class="nav-link" data-page="contact">CONTACT</button>
 
+            </div>
 
+            <button id="theme-toggle" type="button" aria-label="Toggle theme">
+                ◐
+            </button>
 
-            <button id="theme-toggle" type="button"
-                    aria-label="Toggle dark mode">🌙</button>
         </nav>
     </header>
 
+    <main class="main-container">
+
+        <!-- HOME -->
+        <section id="home" class="page active">
 
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    <span class="status-dot"></span>
+                    SYSTEM ONLINE / PORTFOLIO ACTIVE
+                </div>
+
+                <div class="profile-frame">
+                    <div class="profile-ring"></div>
+                    <img src="images/profile.jpg"
+                         alt="Photo of Gemaimah T. Navarro"
+                         class="profile-pic">
+                </div>
 
-    <!-- HOME -->
-    <section id="home" class="hero">
-        <div class="hero-content">
+                <p class="hero-intro">WELCOME TO MY DIGITAL WORLD</p>
 
+                <h1>
+                    HI, I'M <span>GEMAIMAH T. NAVARRO</span>
+                </h1>
 
+                <h2>
+                    BSIT STUDENT <span>//</span> ASPIRING WEB DEVELOPER
+                </h2>
+
+                <p class="hero-description">
+                    Learning One Bug at a Time 💻
+                    <br><br>
+                    Welcome to my portfolio! Explore my educational
+                    background, technical skills, academic projects,
+                    and journey as an Information Technology student.
+                </p>
 
-            <img src="images/profile.jpg"
-                 alt="Photo of Gemaimah T. Navarro"
-                 class="profile-pic">
+                <div class="hero-buttons">
 
+                    <button class="btn primary-btn" data-page="projects">
+                        <span>EXPLORE MY WORK</span> ↗
+                    </button>
 
+                    <button class="btn secondary-btn" data-page="contact">
+                        CONTACT ME
+                    </button>
 
-            <h1>Hi, I'm Gemaimah T. Navarro</h1>
+                </div>
 
+                <div class="hero-footer">
+                    <span><span class="status-dot"></span> SYSTEM STATUS: LEARNING</span>
+                    <span>HTML • CSS • PHP • MYSQL</span>
+                </div>
+
+            </div>
 
-
-            <h2>BSIT Student | Aspiring Web Developer | Learning One Bug at a Time 💻</h2>
-
-
-
-            <p>
-                Welcome to my portfolio! Here, you'll find my educational
-                background, technical skills, academic projects, and journey
-                as a Bachelor of Science in Information Technology student.
-            </p>
-
-
-
-            <a href="#about" class="btn">Get to Know Me</a>
-
-
-
-        </div>
-    </section>
-
-
-
-    <!-- ABOUT -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-
-
-
-        <p>
-            Hello! I'm Gemaimah T. Navarro, a second-year BSIT student
-            at ICCT Colleges Main Campus.
-        </p>
-
-
-
-        <p>
-            I'm interested in technology, web development, and programming.
-            As an IT student, I'm continuously developing my skills by
-            exploring different tools, learning new concepts, and working
-            on academic projects that give me practical experience.
-        </p>
-
-
-
-        <p>
-            I enjoy learning new things, solving problems, and challenging
-            myself to improve. My goal is to build a strong foundation in
-            Information Technology and become a skilled IT professional.
-        </p>
-
-
-
-        <!-- FUN FACTS -->
-        <div class="fun-facts">
-            <h3>Fun Facts 😅</h3>
-
-
-
-            <p>
-                💻 My code works perfectly in my imagination.
-                Unfortunately, the computer has its own interpretation.
-            </p>
-
-
-
-            <p>
-                🐛 Being an IT student means spending hours fixing one bug,
-                only to discover that the real problem was a missing
-                semicolon. Character development, one error at a time.
-            </p>
-        </div>
-    </section>
-
-
-
-    <!-- SKILLS -->
-    <section id="skills" class="skills">
-        <h2>Technical Skills</h2>
-
-
-
-        <div class="skills-container">
-            <div class="skill-card">HTML5</div>
-            <div class="skill-card">CSS3</div>
-            <div class="skill-card">PHP</div>
-            <div class="skill-card">MySQL</div>
-            <div class="skill-card">Git & GitHub</div>
-            <div class="skill-card">Microsoft Office</div>
-        </div>
-    </section>
-
-
-
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-        <h2>Academic Projects</h2>
-
-
-
-        <!-- PROJECT 1: STUDENT REGISTRATION FORM -->
-        <div class="project-card">
-
-
-
-            <img src="images/registration.png"
-                 alt="Student Registration Form"
-                 class="project-image">
-
-
-
-            <h3>Student Registration Form</h3>
-
-
-
-            <p>
-                An academic project focused on creating a student
-                registration form using HTML and CSS. It helped me
-                practice form elements, page structure, and layout design.
-            </p>
-
-
-
-        </div>
-
-
-
-        <!-- PROJECT 2: PERSONAL PORTFOLIO WEBSITE -->
-        <div class="project-card">
-
-
-
-            <h3>Personal Portfolio Website</h3>
-
-
-
-            <p>
-                A personal website developed to present my background,
-                technical skills, academic projects, and contact information.
-                This project allows me to practice HTML, CSS, JavaScript,
-                and website deployment.
-            </p>
-
-
-
-        </div>
-
-
-
-        <!-- PROJECT 3: GRADE SUMMARY SYSTEM -->
-        <div class="project-card">
-
-
-
-            <img src="images/gradesummary.png"
-                 alt="PHP Grade Summary System output screenshot"
-                 class="project-image">
-
-
-
-            <h3>Grade Summary System</h3>
-
-
-
-            <p>
-                An academic programming project designed to calculate
-                and summarize student grades. It helped me practice
-                calculations, data handling, and basic programming logic.
-            </p>
-
-
-
-        </div>
-    </section>
-
-
-
-    <!-- EDUCATION -->
-    <section id="education" class="education">
-        <h2>Education & Achievements</h2>
-
-
-
-        <div class="education-card">
-            <h3>ICCT Colleges</h3>
-
-
-
-            <p>Bachelor of Science in Information Technology (BSIT)</p>
-
-
-
-            <p>2026 - Present</p>
-
-
-
-            <p>
-                Currently pursuing a Bachelor of Science in Information
-                Technology and continuously developing my knowledge
-                and skills in the field.
-            </p>
-        </div>
-
-
-
-        <!-- CERTIFICATES & ACHIEVEMENTS -->
-        <div class="achievement-card">
-            <h3>Certificates & Achievements</h3>
-
-
-
-            <ul>
-                <li>
-                    Participated in technology-related webinars and learning activities.
-                </li>
-
-
-
-                <li>
-                    Cybersecurity Webinar Certificate Recipient.
-                </li>
-            </ul>
-        </div>
-    </section>
-
-
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-        <h2>Let's Connect!</h2>
-
-
-
-        <p>
-            Have a question or want to check out my work?
-            Feel free to reach out!
-        </p>
-
-
-
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:navarrogemaimah@gmail.com">
-                navarrogemaimah@gmail.com
-            </a>
-        </p>
-
-
-
-        <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/navarrogemaimah-crypto"
-               target="_blank"
-               rel="noopener noreferrer">
-                Visit My GitHub Profile
-            </a>
-        </p>
-    </section>
-
-
+            <div class="hero-decoration" aria-hidden="true">
+                <div class="tech-circle circle-one"></div>
+                <div class="tech-circle circle-two"></div>
+                <div class="tech-circle circle-three"></div>
+                <div class="tech-line"></div>
+
+                <div class="tech-code">
+                    <span>01001000</span>
+                    <span>10101010</span>
+                    <span>01100101</span>
+                    <span>11001010</span>
+                </div>
+            </div>
+
+            <div class="corner-text">GN // DIGITAL PORTFOLIO // 2026</div>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="page">
+
+            <div class="page-heading">
+                <p class="section-label">01 / PERSONAL PROFILE</p>
+                <h2>ABOUT <span>ME</span></h2>
+                <p>Getting to know the person behind the screen.</p>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text glass-card">
+
+                    <h3>WHO AM I?</h3>
+
+                    <p>
+                        Hello! I'm Gemaimah T. Navarro, a second-year
+                        BSIT student at ICCT Colleges Main Campus.
+                    </p>
+
+                    <p>
+                        I'm interested in technology, web development,
+                        and programming. As an IT student, I'm
+                        continuously developing my skills by exploring
+                        different tools, learning new concepts, and
+                        working on academic projects that give me
+                        practical experience.
+                    </p>
+
+                    <p>
+                        I enjoy learning new things, solving problems,
+                        and challenging myself to improve. My goal is
+                        to build a strong foundation in Information
+                        Technology and become a skilled IT professional.
+                    </p>
+
+                </div>
+
+                <div class="fun-facts glass-card">
+
+                    <p class="card-label">PERSONAL DATABASE</p>
+                    <h3>FUN FACTS 😅</h3>
+
+                    <p>
+                        💻 My code works perfectly in my imagination.
+                        Unfortunately, the computer has its own
+                        interpretation.
+                    </p>
+
+                    <p>
+                        🐛 Being an IT student means spending hours
+                        fixing one bug, only to discover that the real
+                        problem was a missing semicolon. Character
+                        development, one error at a time.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="page">
+
+            <div class="page-heading">
+                <p class="section-label">02 / TECHNICAL DATABASE</p>
+                <h2>TECHNICAL <span>SKILLS</span></h2>
+                <p>Technologies and tools I have been learning.</p>
+            </div>
+
+            <div class="skills-container">
+
+                <div class="skill-card glass-card">
+                    <span class="skill-number">01</span>
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML5</h3>
+                    <p>Web Page Structure</p>
+                </div>
+
+                <div class="skill-card glass-card">
+                    <span class="skill-number">02</span>
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS3</h3>
+                    <p>Web Styling and Layout</p>
+                </div>
+
+                <div class="skill-card glass-card">
+                    <span class="skill-number">03</span>
+                    <div class="skill-icon">⚙️</div>
+                    <h3>PHP</h3>
+                    <p>Server-Side Programming</p>
+                </div>
+
+                <div class="skill-card glass-card">
+                    <span class="skill-number">04</span>
+                    <div class="skill-icon">🗄️</div>
+                    <h3>MySQL</h3>
+                    <p>Database Management</p>
+                </div>
+
+                <div class="skill-card glass-card">
+                    <span class="skill-number">05</span>
+                    <div class="skill-icon">💻</div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version Control</p>
+                </div>
+
+                <div class="skill-card glass-card">
+                    <span class="skill-number">06</span>
+                    <div class="skill-icon">📂</div>
+                    <h3>Microsoft Office</h3>
+                    <p>Productivity Tools</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="page">
+
+            <div class="page-heading">
+                <p class="section-label">03 / PROJECT DATABASE</p>
+                <h2>ACADEMIC <span>PROJECTS</span></h2>
+                <p>Selected works from my learning journey.</p>
+            </div>
+
+            <div class="projects-container">
+
+                <div class="project-card glass-card">
+
+                    <div class="project-image-container">
+                        <img src="images/registration.png"
+                             alt="Student Registration Form screenshot"
+                             class="project-image"
+                             loading="lazy">
+                        <span class="project-tag">PROJECT 01</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Student Registration Form</h3>
+                        <p>
+                            An academic project focused on creating
+                            a student registration form using HTML
+                            and CSS. It helped me practice form
+                            elements, page structure, and layout design.
+                        </p>
+                        <span class="project-tech">HTML • CSS</span>
+                    </div>
+
+                </div>
+
+                <div class="project-card glass-card">
+
+                    <div class="project-image-container">
+                        <img src="images/portfolio.png"
+                             alt="Personal Portfolio Website screenshot"
+                             class="project-image"
+                             loading="lazy">
+                        <span class="project-tag">PROJECT 02</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>
+                            A personal website developed to present
+                            my background, technical skills, academic
+                            projects, and contact information. This
+                            project allows me to practice HTML, CSS,
+                            JavaScript, and website deployment.
+                        </p>
+                        <span class="project-tech">HTML • CSS • JavaScript</span>
+                    </div>
+
+                </div>
+
+                <div class="project-card glass-card">
+
+                    <div class="project-image-container">
+                        <img src="images/gradesummary.png"
+                             alt="PHP Grade Summary System screenshot"
+                             class="project-image"
+                             loading="lazy">
+                        <span class="project-tag">PROJECT 03</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Grade Summary System</h3>
+                        <p>
+                            An academic programming project designed
+                            to calculate and summarize student grades.
+                            It helped me practice calculations, data
+                            handling, and basic programming logic.
+                        </p>
+                        <span class="project-tech">PHP</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="page">
+
+            <div class="page-heading">
+                <p class="section-label">04 / BACKGROUND DATABASE</p>
+                <h2>EDUCATION & <span>ACHIEVEMENTS</span></h2>
+                <p>My academic background and learning experiences.</p>
+            </div>
+
+            <div class="education-card glass-card">
+
+                <span class="card-label">EDUCATION RECORD</span>
+                <div class="education-icon">🎓</div>
+
+                <h3>ICCT Colleges</h3>
+
+                <p>Bachelor of Science in Information Technology (BSIT)</p>
+
+                <p class="education-date">2026 - Present</p>
+
+                <p>
+                    Currently pursuing a Bachelor of Science in
+                    Information Technology and continuously developing
+                    my knowledge and skills in the field.
+                </p>
+
+            </div>
+
+            <div class="achievement-card glass-card">
+
+                <span class="card-label">LEARNING & DEVELOPMENT</span>
+                <h3>CERTIFICATES & ACHIEVEMENTS</h3>
+
+                <ul>
+                    <li>
+                        Participated in technology-related webinars
+                        and learning activities.
+                    </li>
+                    <li>
+                        Attended the cybersecurity webinar
+                        "Secure by Habit: Everyday Cybersecurity
+                        Practices for Everyone."
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="page">
+
+            <div class="page-heading">
+                <p class="section-label">05 / COMMUNICATION PORTAL</p>
+                <h2>LET'S <span>CONNECT!</span></h2>
+                <p>Have a question or want to check out my work?</p>
+            </div>
+
+            <div class="contact-card glass-card">
+
+                <div class="contact-item">
+                    <span class="contact-icon">✉</span>
+                    <span class="contact-label">EMAIL ADDRESS</span>
+                    <a href="mailto:navarrogemaimah@gmail.com">
+                        navarrogemaimah@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">⌘</span>
+                    <span class="contact-label">GITHUB PROFILE</span>
+                    <a href="https://github.com/navarrogemaimah-crypto"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Visit My GitHub Profile ↗
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <!-- FOOTER -->
     <footer>
-        <p>
-            © 2026 Gemaimah T. Navarro. All Rights Reserved.
-        </p>
-
-
-
-        <p>
-            Built with HTML, CSS, JavaScript, and plenty of determination. 💻
-        </p>
+        <p>© 2026 Gemaimah T. Navarro. All Rights Reserved.</p>
+        <p>BUILT WITH CODE, CREATIVITY & DETERMINATION. 💻</p>
     </footer>
 
+    <!-- BACK TO TOP / HOME -->
+    <button class="back-to-top" id="back-to-top" aria-label="Go to home">
+        ↑
+    </button>
 
-
-    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
-
-
 
 </body>
 </html>
